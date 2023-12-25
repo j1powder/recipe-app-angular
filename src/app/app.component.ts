@@ -6,6 +6,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { FormsModule } from '@angular/forms';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
 
 //@NgModule({declarations: [DropdownDirective],})
 
@@ -22,6 +23,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
     DropdownDirective
 
   ],
+  providers: [ShoppingListService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
